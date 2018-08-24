@@ -82,6 +82,7 @@ namespace Vidly.Controllers
             return View("CustomerForm", viewModel);
         }
 
+        [Authorize]
         public ViewResult Index()
         {
             return View();
